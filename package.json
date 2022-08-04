@@ -5,7 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "dev": "nodemon --watch --ext --ignore --exec src/index.ts",
+    "dev": "nodemon --watch src --ext ts,json --ignore src/**/*.spec.ts --exec ts-node src/index.ts",
     "migrate": "db-migrate up"
   },
   "keywords": [],
